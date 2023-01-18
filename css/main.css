@@ -166,7 +166,7 @@ img {
   list-style: none;
   text-decoration: none;
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .header__nav__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -216,7 +216,7 @@ img {
 .header__contact {
   display: none;
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .header__contact {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1112,9 +1112,9 @@ textarea {
   display: block;
   background-color: var(--white-color);
   border: transparent;
-  padding: 10px, 0, 10px, 0;
+  padding: 10px 0 10px 0;
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .menu-button {
     display: none;
   }
@@ -1140,10 +1140,8 @@ textarea {
   position: absolute;
   top: 10px;
   right: 15px;
-  display: block;
   background-color: var(--white-color);
   border: transparent;
-  padding: 10px, 0, 10px, 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1153,7 +1151,6 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: var(--white-color);
   cursor: pointer;
   -webkit-transition: fill 250ms var(--cubic);
   transition: fill 250ms var(--cubic);
@@ -1162,16 +1159,16 @@ textarea {
   fill: var(--accent-text-color);
 }
 .mobile-menu__container {
+  position: relative;
   max-width: 480px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
   padding-top: 48px;
   padding-bottom: 48px;
 }
 .mobile-menu__list {
-  padding-left: 40px;
   margin-bottom: 306px;
 }
 .mobile-menu__item + .mobile-menu__item {
@@ -1179,10 +1176,6 @@ textarea {
 }
 .mobile-menu__item:hover, .mobile-menu__item:focus {
   color: var(--accent-text-color);
-  fill: var(--accent-text-color);
-}
-.mobile-menu__contact {
-  padding-left: 40px;
 }
 .mobile-menu__contact-tel {
   font-weight: 500;
@@ -1206,36 +1199,33 @@ textarea {
   font-size: 50px;
   line-height: 1.17;
   letter-spacing: 0.02em;
-  list-style: none;
   text-decoration: none;
 }
-.mobile-menu__link :hover,
-.mobile-menu__link :focus {
+.mobile-menu__link:hover, .mobile-menu__link:focus {
   color: var(--accent-text-color);
-  fill: var(--accent-text-color);
 }
 .mobile-menu__link--current {
   color: var(--accent-text-color);
 }
-.mobile-menu__contact-link {
-  -webkit-transition: color 250ms var(--cubic), fill 250ms var(--cubic);
-  transition: color 250ms var(--cubic), fill 250ms var(--cubic);
-  fill: var(--primary-text-color);
-  padding-top: 0;
-  padding-bottom: 0;
-  min-width: 122px;
-  color: var(--primary-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  cursor: pointer;
-  list-style: none;
-  text-decoration: none;
+.mobile-menu__socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 64px;
 }
-.mobile-menu__contact-link:hover, .mobile-menu__contact-link:focus {
+.mobile-menu__social {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
   color: var(--accent-text-color);
-  fill: var(--accent-text-color);
+  padding-right: 10px;
+}
+.mobile-menu__social-list + .mobile-menu__social-list {
+  border-left: 1px solid rgba(33, 33, 33, 0.2);
+  padding-left: 10px;
 }
 
 .portfolio-btns {

@@ -15,7 +15,7 @@
     list-style: none;
     text-decoration: none;
 
-    @media screen and (min-width: 767px) {
+    @media screen and (min-width: 768px) {
         display: flex;
     }
 }
@@ -69,7 +69,7 @@
 .header__contact {
     display: none;
 
-    @media screen and (min-width: 767px) {
+    @media screen and (min-width: 768px) {
         display: flex;
         flex-direction: column;
         gap: 10px;
