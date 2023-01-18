@@ -433,7 +433,7 @@ img {
   }
 }
 .important__item {
-  width: 450px;
+  max-width: 450px;
 }
 @media screen and (min-width: 768px) {
   .important__item {
@@ -715,8 +715,9 @@ img {
   }
 }
 .footer__join-e-mail {
-  width: 450px;
+  max-width: 450px;
   height: 50px;
+  width: 100%;
   padding: 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -755,6 +756,7 @@ img {
 @media screen and (min-width: 1200px) {
   .footer__button-sign {
     margin-left: 12px;
+    margin-top: 0;
   }
 }
 .footer__icon-send {
