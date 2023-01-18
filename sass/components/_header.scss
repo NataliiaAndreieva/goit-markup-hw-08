@@ -1,0 +1,126 @@
+.header {
+   border-bottom: 1px solid var(--border-line-color);
+}
+
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__nav {
+    display: flex;
+
+    &__list { 
+    display: none; 
+    list-style: none;
+    text-decoration: none;
+
+    @media screen and (min-width: 767px) {
+        display: flex;
+    }
+}
+    &__item  {
+    margin-right: 50px;
+}
+    &__item:last-child {
+    margin-right: 0; 
+}
+&__link {
+    transition: color 250ms var(--cubic);
+    
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    list-style: none;
+    text-decoration: none;
+}
+&__link--current {
+    position: relative;
+}
+&__link--current::after {
+    position: absolute;
+    bottom: -1px;
+    width: 100%;
+
+    content: "";
+    display: block;
+    
+    border-bottom: 4px solid var(--accent-text-color);
+    border-radius: 2px;
+}
+&__link--current {
+    color: var(--accent-text-color);
+}
+&__link:hover, 
+&__link:focus {
+    color: var(--accent-text-color);
+    fill: var(--accent-text-color);
+}
+}
+
+
+
+.header__contact {
+    display: none;
+
+    @media screen and (min-width: 767px) {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-direction: initial;
+        gap: 40px;
+    }
+
+
+// &__item + &__item {
+
+//     @media screen and (min-width: 1200px) {
+//         margin-left: 40px;
+// }
+//     }
+    
+
+
+&__link { 
+    transition: color 250ms var(--cubic), fill 250ms var(--cubic);
+
+    fill: var(--primary-text-color);
+ 
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding-top: 0;
+    padding-bottom: 0;
+    min-width: 122px;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    cursor: pointer;
+    list-style: none;
+    text-decoration: none;
+}
+
+&__link:hover,
+&__link:focus {
+    color: var(--accent-text-color);
+    fill: var(--accent-text-color);
+}
+}

@@ -1,0 +1,38 @@
+.work {
+    display: none;
+    
+    @media screen and (min-width: 1200px) {
+       display: flex;
+    }
+    padding-top: 47px;
+
+
+&__foto {
+    display: flex; 
+}
+&__card {
+    position: relative;
+
+    margin-right: 30px;
+}
+&__aside {
+    position: absolute;
+    bottom: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 370px;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+}
+&__text{ 
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--white-color);
+}
+
+&__card:nth-child(3n) {
+    margin-right: 0;
+}
+}
